@@ -1,10 +1,8 @@
 package guru.springframework.springaipromptengineering;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.ai.autoconfigure.openai.OpenAiChatProperties;
 import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.prompt.PromptTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
 
 
 /**
