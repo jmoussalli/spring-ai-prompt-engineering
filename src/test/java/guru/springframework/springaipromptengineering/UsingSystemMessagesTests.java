@@ -1,7 +1,6 @@
 package guru.springframework.springaipromptengineering;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.ai.chat.ChatResponse;
 import org.springframework.ai.chat.messages.Message;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.PromptTemplate;
@@ -34,7 +33,7 @@ public class UsingSystemMessagesTests extends BaseTestClass {
 
         Prompt prompt = new Prompt(messages);
 
-        System.out.println(openAiChatClient.call(prompt).getResult().getOutput().getContent());
+        System.out.println(chatModel.call(prompt).getResult().getOutput().getContent());
     }
 
     @Test
@@ -54,7 +53,7 @@ public class UsingSystemMessagesTests extends BaseTestClass {
 
         Prompt prompt = new Prompt(messages);
 
-        System.out.println(openAiChatClient.call(prompt).getResult().getOutput().getContent());
+        System.out.println(chatModel.call(prompt).getResult().getOutput().getContent());
     }
 
     String cookASteak = """
@@ -84,7 +83,7 @@ public class UsingSystemMessagesTests extends BaseTestClass {
 
         Prompt prompt = new Prompt(messages);
 
-        System.out.println(openAiChatClient.call(prompt).getResult().getOutput().getContent());
+        System.out.println(chatModel.call(prompt).getResult().getOutput().getContent());
     }
 
     @Test
@@ -104,6 +103,6 @@ public class UsingSystemMessagesTests extends BaseTestClass {
 
         Prompt prompt = new Prompt(messages);
 
-        System.out.println(openAiChatClient.call(prompt).getResult().getOutput().getContent());
+        System.out.println(chatModel.call(prompt).getResult().getOutput().getContent());
     }
 }
